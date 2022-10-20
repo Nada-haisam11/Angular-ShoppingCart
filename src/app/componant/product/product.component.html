@@ -1,0 +1,42 @@
+<div class="cart-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+            <a>
+                <img src="assets/img/maxresdefault.jpg" style="width: 110px;" alt="">
+                <h6>All Products</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a>
+                <img src="assets/img/istockphoto-178716575-612x612.jpg" style="width: 80px;" alt="">
+                <h6>Electronic</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a>
+                <img src="assets/img/fashion-pretty-cool-young-girl-shopping-bags-wearing-black-hat-white-pants-over-colorful-orange-background-79063329.jpg" style="width: 100px;" alt="">
+                <h6>Fashion</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a>
+                <img src="assets/img/b7909b71e9bd852b5b4e953074cc1630.jpg" style="width:50px ;" alt="">
+                <h6>Jewelery</h6>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <ng-container  *ngFor="let item  of protectList">
+            <div class="card col-md-3 " >
+                <img src="{{item.image}}" alt="">
+                <h5 >{{item.title}}</h5>
+                <p class="discription">{{item.description}}</p>
+                <p><strong>Price:</strong> {{item.price}}$</p>
+                <button class="btn btn-primary" (click)="addtocart(item)">Add to card</button>
+            </div>
+        </ng-container>
+    </div>
+</div>

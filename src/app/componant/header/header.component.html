@@ -1,0 +1,18 @@
+<header>
+    <div class="navbar bg-primary shadow-sm">
+
+       <div class="navbar-brand aglin-item-center d-flex mx-5" >
+        <i class="fa-solid fa-truck-fast text-light" style="font-size: 30px; ">&nbsp;&nbsp;</i>
+         <strong style="color: white; font-size: 20px;">Shopping Cart</strong> 
+        <div class="form-group">
+            <input type="text" placeholder="saerch" class="form-control">
+        </div>
+        <span class="fas fa-search search-icon text-primary"></span>
+       </div>
+
+       <button class="btn btn-primary" routerLink="cart">
+     <i class="fas fa-cart-plus" style="font-size: 30px;" ></i>
+        <div class="badge bg-danger" style="font-size: 12px;">{{totalitem}}</div>
+       </button>
+    </div>
+</header>
